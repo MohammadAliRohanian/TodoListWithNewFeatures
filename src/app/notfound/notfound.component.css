@@ -1,0 +1,11 @@
+.ntfound{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10%;
+}

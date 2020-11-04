@@ -1,0 +1,27 @@
+<h2 class="title">
+    "{{getName()}}" TodoList
+  </h2>
+  <div>
+    <input type="text" class="textBox" placeholder="Enter Your Task" #textItem [(ngModel)]="newItem"> <br>
+    <button (click)="addItem(textItem.value)" class="addBtn">Add</button> <br>
+  </div>
+  <table>
+    <tr><th>Index</th><th>Task</th><th>Action</th><th>Done</th><th>Remove</th></tr>
+    <tr *ngFor="let item of getItem(); let i=index">
+    <td>
+      {{i+1}}
+    </td>
+    <td>
+      {{item.task}}
+    </td>
+    <td><input type="checkbox" [(ngModel)]="item.done"></td>
+    <td [ngSwitch]="item.done">
+      <span *ngSwitchCase=true>Yes</span>
+      <span *ngSwitchDefault>No</span>
+    </td>
+    <td>
+      <button (click)="removeItem(i)" class="removeBtn">Delete</button>
+    </td>
+  </tr>
+  </table>
+  <h3 class="thanks">Thanks For Using ;)</h3>

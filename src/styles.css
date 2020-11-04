@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: Segoe Script;
+    background-color:rgba(255, 250, 184, 0.747);
+}
+
+ul{
+    list-style-type: none;  
+    margin-top: 20px;
+}
+
+ul li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a.active{
+    font-weight:bolder;
+}
